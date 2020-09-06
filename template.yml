@@ -1,14 +1,14 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Transform: 'Aliyun::Serverless-2018-04-03'
 Resources:
-  Doh-Service:
+  Github-Reverse-Proxy-Service:
     Type: 'Aliyun::Serverless::Service'
     Properties:
-      Description: 'doh-server'
+      Description: 'github-reverse-proxy-server'
       InternetAccess: true
       # LogConfig: 
-      #   Project: doh-server-log
-      #   Logstore: doh-server-log-store
+      #   Project: github-reverse-proxy-server-log
+      #   Logstore: github-reverse-proxy-server-log-store
     resolver:
       Type: 'Aliyun::Serverless::Function'
       Properties:

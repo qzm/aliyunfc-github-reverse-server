@@ -4,7 +4,7 @@
         r (.*?)resolver(.*)
         to {2}
     }
-    proxy / http://localhost:8053 {
+    proxy / https://github.com {
         transparent
     }
     log stdout
